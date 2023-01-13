@@ -1,0 +1,116 @@
+:root {
+    --gray-100: #f2f2f2 ;
+    --gray-200: #d9d9d9 ;
+    --gray-300: #808080 ;
+    --gray-400: #333333 ;
+    --gray-500: #262626 ;
+    --gray-600: #1a1a1a;
+    --gray-700: #0d0d0d;
+
+    --purple: #8284fa;
+    --purpleDark: #5e60ce;
+
+    --blue: #4ea8de;
+    --blueDark: #1e6f9f;
+
+    --danger: #e25858;
+}
+
+:focus{
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--purpleDark);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: var(--gray-600);
+    -webkit-font-smoothing: antialiased
+}
+body, input, button {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1rem; 
+}
+.aside{
+    display: flex;
+    width: 736px;
+    height: 54px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 352px;
+    margin-top: -27px;
+    gap: 8px;
+}
+.aside input{
+    font-size: 16px;
+    width: 638px;
+    height: 54px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: var(--gray-300);
+    border: 1px solid #0D0D0D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    background: var(--gray-500);
+    padding-left: 16px;
+}
+.aside button{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    background: #1E6F9F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    width: 90px;
+    height: 52px;
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    width: 736px;
+    margin-left: 352px;
+    margin-top: 64px;
+    height: 43px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--blue);
+}
+.text span{
+    width: 25px;
+    height: 19px;
+    color: var(--gray-400);
+    background: #333333;
+    border-radius: 999px;
+    padding: 2px 8px;
+    color: white;
+    margin-left: 8px;
+}
+.footer{
+    border-top: 1px solid #333333;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 736px;
+    height: 244px;
+    margin-left: 352px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #808080;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    gap: 16px;
+    line-height: 5px;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 87.5%; /* (14px * 100%) / 16  */
+    }
+}

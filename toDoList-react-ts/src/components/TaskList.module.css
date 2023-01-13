@@ -1,0 +1,54 @@
+.area{
+    display: grid;
+    width: 736px;
+    height: 100px;
+}
+.area li{
+    display: flex;
+    align-items: center;
+    width: 736px;
+    height: 72px;
+    background: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-left: 352px;
+    gap: 12px;
+}
+li .check[type="checkbox"]{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid var(--blue);
+    appearance: none;
+    cursor: pointer;
+    margin-left: 16px;
+    
+}
+li .check:checked::after {
+    display: flex;
+    content: "✔";
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: white;
+    background: #5E60CE;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    
+}
+li p{
+    font-size: 14px;
+    color: var(--gray-100);  
+    margin-right: auto;
+    word-break: break-all;
+}
+li .trash{
+    background: transparent;
+    color: var(--gray-400);
+    margin-right: 16px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    border: none;
+}
