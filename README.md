@@ -10,7 +10,7 @@ To do List é uma aplicação frontend web construída com a finalidade e adicio
 - Listas e chaves no ReactJS
 - Propriedades
 - Componentização
-- 
+  
 ## Front end
 - HTML / CSS / JS / TypeScript
 - ReactJS
